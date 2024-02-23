@@ -1,11 +1,7 @@
 @font-face { font-family: Basic; src: url("../FONT/Roboto-Light.ttf");}
 
-h1, h2, h3, h4, p {
+h1, h2, h3, h4, p, .empty, a {
     font-family: Basic;
-}
-
-main {
-    margin-top: 100px;
 }
 
 a {
@@ -40,18 +36,17 @@ header > nav > ul {
 
 main {
     display: flex;
-    justify-content: center;
-    width: 100%;
+    flex-direction: column;
+    margin-top: 100px;
+    align-items: center;
 }
 
-#image {
-    object-fit: hover;
-    width: 50%;
-}
-
-#details {
-    margin-left: 20px;
-    margin-right: 20px;
+main > ul {
     list-style: none;
-    padding: 0;
+}
+
+#confirm {
+    margin-top: 50px;
+    width: 100%;
+    font-size: 15px;
 }
